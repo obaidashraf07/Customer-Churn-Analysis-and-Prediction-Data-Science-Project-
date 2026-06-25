@@ -1,0 +1,22 @@
+-- Total Customers
+SELECT COUNT(*) AS Total_Customers
+FROM customers;
+
+-- Churn Count
+SELECT Churn, COUNT(*)
+FROM customers
+GROUP BY Churn;
+
+-- Contract Analysis
+SELECT Contract, COUNT(*)
+FROM customers
+GROUP BY Contract;
+
+-- Average Monthly Charges
+SELECT AVG(MonthlyCharges)
+FROM customers;
+
+-- Internet Service Analysis
+SELECT InternetService, COUNT(*)
+FROM customers
+GROUP BY InternetService;
